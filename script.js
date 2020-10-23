@@ -20,10 +20,10 @@ for (let person of array) {
     console.log(person.name, " zijn beroep is: ", person.profession);
     //deel 5
     if (person.age > 50) {
-        console.log(person.name, " is ouder dan 50 ")
+        console.log(person.name, " is ouder dan 50! ")
     }
     else {
-        console.log(person.name, " is niet ouder dan 50 ")
+        console.log(person.name, " is niet ouder dan 50! ")
     }
 
 }
