@@ -1,30 +1,48 @@
+//Deel A:
+//Adding an Element to the array
+let array = []
+let addTheWordCool = () => array.push("cool")
+addTheWordCool()
+console.log(array)
 
-const array = [
-    { name: "N. Armstrong", profession: "spacecowboy", age: 89 },
-    { name: "H. de Haan", profession: "kippen hypnotiseur", age: 59 },
-    { name: "A. Curry", profession: "kikvorsman", age: 32 },
-    { name: "F. Vonk", profession: "slangenmelker", age: 36 },
-    { name: "B. Bunny", profession: "konijnen uitlaatservice", age: 27 },
-    { name: "Dr.Evil", profession: "digital overlord", age: 56 }
-];
+//Deel B:
+//Check Amount of Elements in Array
+let array2 = ["nice", "cool", "awesome", "tof"]
+let amountOfElementsInArray = () => array2.length
+console.log(amountOfElementsInArray())
 
-for (let person of array) {
-    //deel 1
-    console.log("Dit is persoon:", person);
-    //deel 2
-    console.log("Dit is zijn naam:", person.name);
-    //deel 3
-    let dateOfBirth = (2020 - person.age)
-    console.log("Dit is zijn geboortedatum:", dateOfBirth);
-    //deel 4
-    console.log(person.name, " zijn beroep is: ", person.profession);
-    //deel 5
-    if (person.age > 50) {
-        console.log(person.name, " is ouder dan 50! ")
-    }
-    else {
-        console.log(person.name, " is niet ouder dan 50! ")
-    }
+//Deel C:
+//First element in array
+let array3 = ["nice", "cool", "awesome", "tof"]
+let firstElementInArray = () => array3[0]
+console.log(firstElementInArray())
 
-}
+//Deel D:
+//Last element in array
+//No Mutation
+let array4 = ["nice", "cool", "awesome", "tof"]
+let lastElementInArray = () => array4.slice(-1)[0]
+console.log(lastElementInArray())
 
+//Deel E:
+let array5 = ["nice", "cool", "awesome", "tof"]
+//slice won't Mutate the original array
+let deleteFirstElement = () => array5.slice(1);
+console.log(deleteFirstElement())
+//splice will Mutate the original array
+let deleteFirstElementAndMutate = () => array5.splice(1);
+console.log(deleteFirstElementAndMutate())
+
+
+//Deel F:
+//No Mutation
+let array6 = ["nice", "cool", "awesome", "tof"]
+let joinString = () => array6.join(" ")
+console.log(joinString())
+
+//Deel G: 
+//No Mutation
+var array7 = ['nice', 'cool', 'awesome', 'tof'];
+var array8 = ['yo', 'yi', 'yes'];
+let joinArrays = () => array7.concat(array8)
+console.log(joinArrays());
